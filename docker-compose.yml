@@ -1,4 +1,3 @@
-version: '3.8'
 
 services:
   backend:
@@ -12,9 +11,6 @@ services:
       - ./backend/transcripts:/app/transcripts
     environment:
       - PYTHONUNBUFFERED=1
-    platform:
-      - "8080:8080"
+    platform: linux/amd64
     tty: true
     stdin_open: true
-
-    

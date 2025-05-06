@@ -1,4 +1,6 @@
-FROM --platform=linux/amd64 golang:1.22 as builder
+# ビルドステージ（Golang）
+# ビルドステージ（Golang）
+FROM --platform=linux/amd64 golang:1.24 AS builder
 
 WORKDIR /app
 COPY backend/go.mod ./
